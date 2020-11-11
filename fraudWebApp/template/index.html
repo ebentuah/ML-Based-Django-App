@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mobile Money Fraud Detection App</title>
+</head>
+<body>
+    
+    <h2>This app has the ability to predict if a moble money transaction is fraudulent or not.</h2>
+    <h3> Kindly enter the required details:</h3>
+    <br>
+    <form method="POST" enctype="multipart/form-data", action="fraudDetection"></form>
+{% csrf_token %}
+<div class="col-md-4 col-sm-4"><label for="fname">step:</label> </div> <input name="stepVal" type="text" value=100><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">type:</label> </div> <input type="text" id="lname" name="typeVal" value=TRANSFER><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">amount:</label> </div> <input type="text" id="fname" name="amountVal" value=47664><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">nameOrig:</label> </div> <input type="text" id="lname" name="nameOrigVal" value=C1720120297><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">oldbalanceOrg:</label></div>  <input type="text" id="fname" name="oldbalanceOrgVal" value=500000><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">newbalanceOrig:</label> </div> <input type="text" id="lname" name="newbalanceOrigVal" value=100664><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">nameDest:</label> </div> <input type="text" id="lname" name="nameDestVal" value=C496863720><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">oldbalanceDest:</label> </div> <input type="text" id="lname" name="oldbalanceDestVal" value=1605021.18><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">newbalanceDest:</label> </div> <input type="text" id="lname" name="newbalanceDestVal" value=1000000.89><br><br>
+ <br>
+
+<input type="submit" value="Submit"></div>
+</form>
+<br>
+</body>
+
+
+</html>
